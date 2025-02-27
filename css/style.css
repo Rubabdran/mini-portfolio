@@ -118,22 +118,28 @@ border-color: aliceblue;
     box-shadow: 0 0 10px aliceblue;
     color: #333;
 }
-.home-img .img-box{
+
+
+.home-img .img-box {
     position: relative;
-    width: 20vw;
-    height: 20vw;
+    width: 30vw; 
+    height: 30vw;
     border: 2px solid aliceblue;
     border-radius: 50%;
     box-shadow: 0 0 20px aliceblue;
     overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 60px;
 }
 
-
-.home-img .img-box img{
-display: flex;
-    width: max-content;
-    height: max-content;
-
+.home {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: aliceblue;
+   
 }
-
-
