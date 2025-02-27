@@ -1,100 +1,139 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
 }
-.nav {
+
+
+
+.container{
+    position: relative;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+    border:2px solid  rgba(255,255,255,.2) ;
+    border-radius: 30px;
+    backdrop-filter: blur(25px);
+}
+
+header{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    background: rgb(206, 43, 76);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #050504;
-    padding: 10px 20px;
+    z-index: 100;
 }
-h1 {
-    color: rgb(255, 244, 244);
-    font-size: 24px;
+
+.logo {
+    font-size: 25px;
+    color: aliceblue;
     text-decoration: none;
+    font-weight: 600;
+
 }
-#hello{
-    color: rgb(0, 0, 0);
-    font-size: 24px;
+
+.navbar a{
+    font-size: 18px;
+    color: aliceblue;
     text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition:.5s ;
 }
-#about-me{
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    text-decoration: none;
+
+.navbar a:hover,
+.navbar a.active {
+border-color: aliceblue;
 }
-.nav-options {
-    list-style: none;
+
+.home{
     display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: aliceblue;
 }
-.nav-options a {
-    color: white;
+.home-detail h1{
+    font-size: 55px;
+    line-height: 1;
+}
+.home-detail h2{
+    font-size: 32px;
+  line-height: 1;
+}
+.home-detail p{
+    margin: 10px 0 20px;
+  
+}
+
+.home-detail .download-social{
+    display: flex;
+    align-items: center;
+  
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px aliceblue;
+    color: #333;
     text-decoration: none;
-    padding: 8px 16px;
+    font-weight: 500;
 }
 
-/* ################# */
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.container.left {
-    flex: 1;
-    padding-right: 20px;
-}
-p{
-    text-align: justify; 
-    text-align: center;
-    margin-top : 75px;
+.btn:hover{
+    background: transparent;
+    box-shadow: none;
+    color: aliceblue;
 }
 
-
-#Image-2 {
-    /* position: absolute; */
-    width: 450px;
-    height: 315px;
-    margin-left: 40px ;
-    margin-top: 55px;
-    
-    border-radius: 10px;
+.home-detail .social-icons{
+ margin-left: 20px;
 }
 
-.button {
-    background-color: #fa9fda;
-    margin-bottom: 60px;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.home-detail .social-icons a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: .5s;
 }
-/* ############### */
-.container-pink {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #fa9fda;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.home-detail.social-icons a:hover{
+    background: aliceblue;
+    box-shadow: 0 0 10px aliceblue;
+    color: #333;
 }
-.button-2{
-    background-color: #ffffff;
-    margin-bottom: 60px;
-    color: #fa9fda;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.home-img .img-box{
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    box-shadow: 0 0 20px aliceblue;
+    overflow: hidden;
 }
+
+
+.home-img .img-box img{
+display: flex;
+    width: max-content;
+    height: max-content;
+
+}
+
+
